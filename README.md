@@ -25,6 +25,13 @@ $zip = "$env:TEMP\gt.zip"; $dir = "$env:TEMP\gt"; `
     Write-Host "Installation erfolgreich abgeschlossen!" -ForegroundColor Green
 ```
 
+**Was macht das Script?**
+1. 📦 Lädt die ZIP-Datei von GitHub herunter
+2. 📂 Entpackt sie in einen temporären Ordner
+3. 📋 Kopiert die Übersetzungsdateien nach `%appdata%\Hytale\install`
+4. 🧹 Räumt die temporären Dateien auf
+5. ✅ Zeigt eine Erfolgsmeldung an
+
 ### Manuelle Installation
 
 1. Lade die neueste Version herunter: https://github.com/CelduinX/hytale-german-translation/raw/refs/heads/main/latest.zip
@@ -38,10 +45,6 @@ $zip = "$env:TEMP\gt.zip"; $dir = "$env:TEMP\gt"; `
 | `client.lang` | Client-Übersetzungen (UI, Menüs, etc.) |
 | `server.lang` | Server-Übersetzungen (Items, NPCs, etc.) |
 | `avatarCustomization/*.lang` | Avatar-Anpassungen |
-
-## 🤝 Mitwirken
-
-Fehler gefunden oder Verbesserungsvorschläge? Erstelle gerne ein [Issue](https://github.com/USERNAME/REPO/issues)!
 
 ---
 
