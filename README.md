@@ -18,10 +18,11 @@ Eine deutsche Übersetzung für Hytale.
 ```powershell
 # Dieser Befehl installiert die deutsche Übersetzung automatisch
 $zip = "$env:TEMP\gt.zip"; $dir = "$env:TEMP\gt"; `
-Invoke-WebRequest "https://github.com/CelduinX/hytale-german-translation/raw/refs/heads/main/latest.zip" -OutFile $zip; `
-Expand-Archive $zip $dir -Force; `
-Copy-Item "$dir\install\*" "$env:APPDATA\Hytale\install" -Recurse -Force; `
-Remove-Item $zip, $dir -Recurse -Force
+    Invoke-WebRequest "https://github.com/USERNAME/REPO/releases/latest/download/German_Translation.zip" -OutFile $zip; `
+    Expand-Archive $zip $dir -Force; `
+    Copy-Item "$dir\install\*" "$env:APPDATA\Hytale\install" -Recurse -Force; `
+    Remove-Item $zip, $dir -Recurse -Force; `
+    Write-Host "Installation erfolgreich abgeschlossen!" -ForegroundColor Green
 ```
 
 ### Manuelle Installation
