@@ -13,12 +13,12 @@ Eine deutsche Übersetzung für Hytale.
 
 ### Automatische Installation (empfohlen)
 
-Öffne **PowerShell** und füge folgenden Befehl ein:
+Öffne die Windows **PowerShell** und füge folgenden Befehl ein:
 
 ```powershell
 # Dieser Befehl installiert die deutsche Übersetzung automatisch
 $zip = "$env:TEMP\gt.zip"; $dir = "$env:TEMP\gt"; `
-Invoke-WebRequest "https://github.com/USERNAME/REPO/releases/latest/download/German_Translation.zip" -OutFile $zip; `
+Invoke-WebRequest "https://github.com/CelduinX/hytale-german-translation/raw/refs/heads/main/latest.zip" -OutFile $zip; `
 Expand-Archive $zip $dir -Force; `
 Copy-Item "$dir\install\*" "$env:APPDATA\Hytale\install" -Recurse -Force; `
 Remove-Item $zip, $dir -Recurse -Force
@@ -26,7 +26,7 @@ Remove-Item $zip, $dir -Recurse -Force
 
 ### Manuelle Installation
 
-1. Lade die neueste Version von den [Releases](https://github.com/USERNAME/REPO/releases) herunter
+1. Lade die neueste Version herunter: https://github.com/CelduinX/hytale-german-translation/raw/refs/heads/main/latest.zip
 2. Entpacke die ZIP-Datei
 3. Kopiere den `install`-Ordner nach `%appdata%\Hytale\`
 
