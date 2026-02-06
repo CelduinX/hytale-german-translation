@@ -1,4 +1,4 @@
-# 🎮 Hytale German Translation - Eine deutsche Übersetzung für Hytale
+# 🎮 Hytale German Translation
 **Letzte Aktualisierung: 06.02.2025 (pre-release/2026.02.05-9ce2783f7)**
 
 ## ✨ Features
